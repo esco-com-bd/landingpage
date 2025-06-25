@@ -1,0 +1,212 @@
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 56px;
+    }
+    
+    .section-title {
+        font-size: 42px;
+    }
+    
+    .about-content {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-menu {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-outline {
+        text-align: center;
+    }
+    
+    .about-content {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    
+    .contact-form {
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .floating-card {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-btn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .mobile-menu-toggle {
+        display: flex; /* ✅ Show on mobile */
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-top {
+        display: none;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .hero-description {
+        font-size: 18px;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .service-card,
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    
+    .footer-bottom-links {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .hero-section {
+        padding: 120px 0 80px;
+    }
+    
+    .about-section,
+    .services-section,
+    .portfolio-section,
+    .team-section,
+    .testimonials-section,
+    .blog-section,
+    .contact-section {
+        padding: 80px 0;
+    }
+    
+    .contact-form {
+        padding: 25px;
+    }
+    
+    .footer-top {
+        padding: 60px 0 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 10px;
+    }
+}
+
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Loading Animation */
+.loading {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.loading.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
